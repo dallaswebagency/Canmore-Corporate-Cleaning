@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Canmore Corporate Cleaning | Commercial, Industrial, Residential and Airbnb Cleaning</title>
 <meta name="description" content="Canmore Corporate Cleaning provides top-notch commercial, industrial, residential, Airbnb and janitorial cleaning. Your cleaning needs, our cleaning hands.">
+<link rel="icon" type="image/png" href="images/logo-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
@@ -41,9 +42,9 @@ h2{font-size:clamp(34px,4.6vw,62px)}
 
 /* header */
 header.nav{position:sticky;top:0;z-index:50;background:rgba(245,239,228,.94);backdrop-filter:blur(10px);border-bottom:1px solid rgba(36,24,16,.12)}
-header.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:78px}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:96px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
-.brand svg{width:46px;height:46px;flex:none}
+.brand img{height:74px;width:auto;flex:none}.flogo{display:inline-block;background:var(--cream);padding:14px 22px;border-radius:4px}.flogo img{height:92px;width:auto}
 .brand span{font-family:var(--serif);font-size:19px;line-height:1.05;display:block}
 .brand small{display:block;font-family:var(--sans);font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--brass-d);font-weight:700;margin-top:3px}
 nav.links{display:flex;gap:30px;align-items:center}
@@ -66,7 +67,7 @@ nav.links .btn:hover{background:var(--spruce)}
 .hero-side .cta{display:flex;gap:12px;flex-wrap:wrap}
 .hero-img{position:relative;margin-top:clamp(34px,5vw,64px)}
 .hero-img .pic{height:clamp(300px,42vw,560px);overflow:hidden;clip-path:polygon(0 16%,5% 7%,10% 13%,17% 2%,25% 11%,32% 5%,40% 15%,49% 3%,58% 12%,66% 6%,75% 14%,84% 2%,92% 10%,100% 5%,100% 100%,0 100%)}
-.hero-img .pic img{width:100%;height:100%;object-fit:cover;object-position:center 60%}
+.hero-img .pic img{width:100%;height:100%;object-fit:cover;object-position:center 62%}
 .hero-img .pic::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(36,24,16,.45))}
 .sign{position:absolute;left:var(--gut);bottom:-34px;background:var(--timber);color:var(--cream);padding:20px 26px;border:2px solid var(--brass);outline:5px solid var(--timber);display:flex;gap:26px;align-items:center;z-index:3;box-shadow:0 20px 40px rgba(36,24,16,.3)}
 .sign div small{display:block;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--brass)}
@@ -236,7 +237,7 @@ footer a:hover{color:var(--brass)}
 .rv.in{opacity:1;transform:none}
 
 @media(max-width:980px){
-  nav.links{position:fixed;inset:78px 0 auto 0;background:var(--cream);flex-direction:column;align-items:flex-start;padding:24px var(--gut) 32px;gap:20px;border-bottom:1px solid rgba(36,24,16,.2);transform:translateY(-130%);transition:transform .35s;z-index:-1}
+  nav.links{position:fixed;inset:96px 0 auto 0;background:var(--cream);flex-direction:column;align-items:flex-start;padding:24px var(--gut) 32px;gap:20px;border-bottom:1px solid rgba(36,24,16,.2);transform:translateY(-130%);transition:transform .35s;z-index:-1}
   nav.links.open{transform:none}
   .burger{display:block}
   .hero-top,.svc-grid,.about-grid,.people-grid,.price-grid,.contact-grid{grid-template-columns:1fr}
@@ -285,10 +286,7 @@ footer a:hover{color:var(--brass)}
 
 <header class="nav">
   <div class="wrap">
-    <a href="#top" class="brand" aria-label="Canmore Corporate Cleaning home">
-      <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="23" fill="#241810"/><path d="M6 35 L17 17 L22 25 L29 12 L42 35 Z" fill="#c99a4a"/><path d="M29 12 L33.5 20 L30.5 19 L29 22 L27 19 L25.5 20 Z" fill="#f5efe4"/><path d="M8 38 Q24 33 40 38" stroke="#8ec3cc" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
-      <div><span>Canmore Corporate<br>Cleaning</span></div>
-    </a>
+    <a href="#top" class="brand" aria-label="Canmore Corporate Cleaning home"><img src="images/logo.png" alt="Canmore Corporate Cleaning logo" width="1154" height="645"></a>
     <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
     <nav class="links" id="menu">
       <a href="#services">Services</a>
@@ -328,7 +326,7 @@ footer a:hover{color:var(--brass)}
           <text font-family="DM Sans" font-weight="700" font-size="14" letter-spacing="2.4" fill="#241810"><textPath href="#cp" textLength="480" lengthAdjust="spacing">WEEKLY &#8226; MONTHLY &#8226; YEARLY &#8226; JANITORIAL &#8226;</textPath></text></svg>
         <div class="core"><div>19<small>years</small></div></div>
       </div>
-      <div class="pic"><img src="images/hero.jpg" alt="Polished timber floors and dining hall cleaned by Canmore Corporate Cleaning" width="1316" height="640"></div>
+      <div class="pic"><img src="images/hero.jpg" alt="Timber lodge great room with polished floors and a cleaning cart ready" width="1376" height="768"></div>
       <div class="sign">
         <div><small>Open today</small><strong>9:00 am &ndash; 5:00 pm</strong></div>
         <hr>
@@ -354,10 +352,10 @@ footer a:hover{color:var(--brass)}
       <div class="eyebrow">What we clean</div>
       <h2>One crew for every kind of space.</h2>
       <div class="svc-frame">
-        <img class="on" src="images/commercial.jpg" alt="Cleaners at work in a commercial office" data-i="0">
+        <img class="on" src="images/commercial.jpg" alt="Commercial lobby with polished floors and a janitorial cart" data-i="0" style="object-position:82% 50%">
         <img src="images/industrial.jpg" alt="Large building exterior windows being cleaned" data-i="1" loading="lazy">
         <img src="images/residential.jpg" alt="Freshly cleaned bathroom" data-i="2" loading="lazy">
-        <img src="images/airbnb.jpg" alt="Cleaner wiping down a lodge kitchen counter" data-i="3" loading="lazy">
+        <img src="images/airbnb.jpg" alt="Clean mountain Airbnb suite with fresh towels on the bed" data-i="3" loading="lazy">
         <img src="images/janitorial.jpg" alt="Janitorial vacuuming of a long carpeted hallway" data-i="4" loading="lazy">
       </div>
     </div>
@@ -515,7 +513,7 @@ footer a:hover{color:var(--brass)}
   <div class="wrap">
     <div class="foot">
       <div>
-        <a href="#top" class="brand"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="23" fill="#c99a4a"/><path d="M6 35 L17 17 L22 25 L29 12 L42 35 Z" fill="#241810"/><path d="M29 12 L33.5 20 L30.5 19 L29 22 L27 19 L25.5 20 Z" fill="#f5efe4"/></svg><div><span>Canmore Corporate<br>Cleaning</span></div></a>
+        <a href="#top" class="flogo"><img src="images/logo.png" alt="Canmore Corporate Cleaning logo" width="1154" height="645"></a>
         <p class="tag">Your cleaning needs, our cleaning hands.</p>
       </div>
       <div>
