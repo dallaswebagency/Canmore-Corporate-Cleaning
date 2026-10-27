@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Canmore Corporate Cleaning | Commercial, Industrial, Residential and Airbnb Cleaning</title>
+<meta name="description" content="Canmore Corporate Cleaning provides top-notch commercial, industrial, residential, Airbnb and janitorial cleaning. Your cleaning needs, our cleaning hands.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --espresso:#241810; --timber:#3b2819; --spruce:#16352f; --brass:#c99a4a; --brass-d:#8f6a2a;
+  --cream:#f5efe4; --paper:#ebe2d0; --glacier:#8ec3cc; --ink:#1f1610; --muted:#6b5a4a;
+  --serif:'Young Serif',Georgia,serif; --sans:'DM Sans',system-ui,sans-serif;
+  --gut:clamp(20px,5vw,72px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--cream);color:var(--ink);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1320px;margin:0 auto;padding:0 var(--gut)}
+.eyebrow{font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:700;color:var(--brass-d)}
+.dark .eyebrow{color:var(--brass)}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.05;letter-spacing:-.01em}
+h2{font-size:clamp(34px,4.6vw,62px)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 28px;border-radius:2px;font-weight:700;font-size:15px;letter-spacing:.04em;text-decoration:none;border:0;cursor:pointer;transition:transform .2s,background .2s,color .2s;font-family:var(--sans)}
+.btn-brass{background:var(--brass);color:var(--espresso)}
+.btn-brass:hover{background:#dcae5c;transform:translateY(-2px)}
+.btn-line{border:1.5px solid currentColor;background:transparent;color:inherit}
+.btn-line:hover{background:var(--espresso);color:var(--cream);border-color:var(--espresso)}
+.btn svg{width:16px;height:16px}
+
+/* utility bar */
+.util{background:var(--espresso);color:#d8c7a8;font-size:13.5px}
+.util .wrap{display:flex;justify-content:space-between;gap:16px;padding-top:9px;padding-bottom:9px;flex-wrap:wrap}
+.util b{color:var(--brass);font-weight:700}
+.util a{text-decoration:none}
+.util .r{display:flex;gap:26px;flex-wrap:wrap}
+
+/* header */
+header.nav{position:sticky;top:0;z-index:50;background:rgba(245,239,228,.94);backdrop-filter:blur(10px);border-bottom:1px solid rgba(36,24,16,.12)}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:78px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand svg{width:46px;height:46px;flex:none}
+.brand span{font-family:var(--serif);font-size:19px;line-height:1.05;display:block}
+.brand small{display:block;font-family:var(--sans);font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--brass-d);font-weight:700;margin-top:3px}
+nav.links{display:flex;gap:30px;align-items:center}
+nav.links a{text-decoration:none;font-size:15px;font-weight:500;position:relative}
+nav.links a:not(.btn)::after{content:'';position:absolute;left:0;bottom:-6px;height:2px;width:0;background:var(--brass);transition:width .25s}
+nav.links a:not(.btn):hover::after{width:100%}
+nav.links .btn{padding:12px 20px;background:var(--espresso);color:var(--cream)}
+nav.links .btn:hover{background:var(--spruce)}
+.burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer}
+.burger span{display:block;height:2px;background:var(--ink);margin:7px 8px;transition:.3s}
+
+/* hero */
+.hero{position:relative;padding-top:clamp(40px,6vw,84px);padding-bottom:46px;overflow:hidden}
+.hero::before{content:'';position:absolute;right:-12%;top:-10%;width:78%;height:105%;background:url(images/contour.svg) center/contain no-repeat;opacity:.22;pointer-events:none}
+.hero .wrap{position:relative}
+.hero-top{display:grid;grid-template-columns:1.55fr 1fr;gap:clamp(24px,5vw,80px);align-items:end}
+.hero h1{font-size:clamp(46px,8.2vw,124px);margin:18px 0 0;line-height:.96}
+.hero h1 em{font-style:normal;color:var(--brass-d)}
+.hero-side p{font-size:clamp(18px,1.6vw,22px);max-width:30ch;margin-bottom:26px}
+.hero-side .cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero-img{position:relative;margin-top:clamp(34px,5vw,64px)}
+.hero-img .pic{height:clamp(300px,42vw,560px);overflow:hidden;clip-path:polygon(0 16%,5% 7%,10% 13%,17% 2%,25% 11%,32% 5%,40% 15%,49% 3%,58% 12%,66% 6%,75% 14%,84% 2%,92% 10%,100% 5%,100% 100%,0 100%)}
+.hero-img .pic img{width:100%;height:100%;object-fit:cover;object-position:center 60%}
+.hero-img .pic::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(36,24,16,.45))}
+.sign{position:absolute;left:var(--gut);bottom:-34px;background:var(--timber);color:var(--cream);padding:20px 26px;border:2px solid var(--brass);outline:5px solid var(--timber);display:flex;gap:26px;align-items:center;z-index:3;box-shadow:0 20px 40px rgba(36,24,16,.3)}
+.sign div small{display:block;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--brass)}
+.sign div strong{font-family:var(--serif);font-weight:400;font-size:21px}
+.sign hr{width:1px;height:42px;border:0;background:rgba(201,154,74,.5)}
+.stamp{position:absolute;right:clamp(16px,6vw,90px);top:-60px;width:clamp(110px,13vw,170px);z-index:3;animation:spin 28s linear infinite}
+.stamp .core{position:absolute;inset:0;display:grid;place-items:center;text-align:center;font-family:var(--serif);font-size:clamp(30px,4vw,48px);color:var(--espresso);line-height:.9}
+.stamp .core small{display:block;font-family:var(--sans);font-size:11px;letter-spacing:.18em;font-weight:700;text-transform:uppercase}
+@keyframes spin{to{transform:rotate(360deg)}}
+.stamp-wrap{position:absolute;right:clamp(16px,6vw,90px);top:-56px;width:clamp(110px,13vw,170px);aspect-ratio:1;z-index:3}
+.stamp-wrap svg{width:100%;height:100%;animation:spin 28s linear infinite}
+.stamp-wrap .core{position:absolute;inset:0;display:grid;place-items:center;text-align:center;font-family:var(--serif);font-size:clamp(34px,4.2vw,52px);line-height:.85;color:var(--espresso)}
+.stamp-wrap .core small{display:block;font-family:var(--sans);font-size:10px;letter-spacing:.2em;font-weight:700;text-transform:uppercase;margin-top:4px}
+
+/* places band */
+.places{background:var(--espresso);color:var(--cream);padding:70px 0 40px}
+.places{overflow:visible}.places .marq-clip{overflow:hidden}.places .lab{display:flex;align-items:center;gap:18px;margin-bottom:18px}
+.places .lab::after{content:'';flex:1;height:1px;background:rgba(201,154,74,.4)}
+.marq{display:flex;width:max-content;animation:marq 40s linear infinite}
+.marq span{font-family:var(--serif);font-size:clamp(34px,5vw,68px);white-space:nowrap;padding-right:.5em;display:flex;align-items:center;gap:.5em}
+.marq span::after{content:'';width:.42em;height:.42em;background:var(--brass);clip-path:polygon(50% 0,100% 100%,0 100%);flex:none}
+.marq span:nth-child(even){font-style:italic;color:var(--brass)}
+@keyframes marq{to{transform:translateX(-50%)}}
+
+/* services */
+.services{padding:clamp(70px,9vw,130px) 0}
+.svc-grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(30px,6vw,96px);align-items:start}
+.svc-left{position:sticky;top:110px}
+.svc-left h2{margin:14px 0 30px}
+.svc-frame{position:relative;aspect-ratio:4/4.6;background:var(--paper);clip-path:polygon(0 0,86% 0,100% 12%,100% 100%,14% 100%,0 88%)}
+.svc-frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .5s,transform .8s;transform:scale(1.06)}
+.svc-frame img.on{opacity:1;transform:scale(1)}
+.svc-list{list-style:none;border-top:1.5px solid var(--ink)}
+.svc-list li{border-bottom:1px solid rgba(36,24,16,.25)}
+.svc-list button{width:100%;display:grid;grid-template-columns:64px 1fr 34px;align-items:center;gap:8px;text-align:left;background:none;border:0;padding:30px 4px;cursor:pointer;font-family:inherit;color:inherit;transition:padding .3s,background .3s}
+.svc-list .n{font-family:var(--serif);color:var(--brass-d);font-size:20px}
+.svc-list h3{font-size:clamp(28px,3.4vw,46px);transition:transform .3s}
+.svc-list p{grid-column:2;color:var(--muted);max-width:46ch;font-size:16px;max-height:0;overflow:hidden;opacity:0;transition:max-height .4s,opacity .4s}
+.svc-list .ar{width:30px;height:30px;border:1.5px solid var(--ink);border-radius:50%;display:grid;place-items:center;transition:.3s}
+.svc-list .ar svg{width:12px}
+.svc-list li.on button{padding-left:16px}
+.svc-list li.on p{max-height:120px;opacity:1;margin-top:10px}
+.svc-list li.on .ar{background:var(--brass);border-color:var(--brass);transform:rotate(-45deg)}
+.svc-list li.on h3{transform:translateX(4px)}
+
+/* ridge */
+.ridge{position:relative}
+.ridge::before{content:'';position:absolute;left:0;right:0;top:0;transform:translateY(-99%);height:clamp(36px,5vw,72px);background:var(--bg);clip-path:polygon(0 100%,0 60%,7% 30%,13% 55%,21% 10%,29% 45%,36% 25%,45% 60%,53% 15%,62% 50%,70% 28%,79% 58%,87% 8%,94% 40%,100% 20%,100% 100%)}
+
+/* promises */
+.promises{--bg:var(--timber);background:var(--timber);color:var(--cream);padding:clamp(60px,8vw,110px) 0}
+.promises .head{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:56px}
+.promises h2{max-width:14ch}
+.promises .head p{max-width:34ch;color:#d8c7a8}
+.trip{display:grid;grid-template-columns:repeat(3,1fr)}
+.trip article{padding:10px clamp(18px,3vw,44px) 10px 0;border-right:1px solid rgba(201,154,74,.35);margin-right:clamp(18px,3vw,44px)}
+.trip article:last-child{border:0;margin:0}
+.trip svg.ic{width:64px;height:64px;stroke:var(--brass);fill:none;stroke-width:1.6;margin-bottom:26px}
+.trip h3{font-size:clamp(24px,2.5vw,32px);margin-bottom:14px}
+.trip p{color:#d8c7a8;font-size:16px}
+.chips{display:flex;gap:8px;margin-top:20px;flex-wrap:wrap}
+.chips b{border:1px solid var(--brass);color:var(--brass);padding:5px 14px;border-radius:40px;font-size:13px;font-weight:500;letter-spacing:.05em}
+
+/* about */
+.about{padding:clamp(70px,9vw,130px) 0;background:var(--paper)}
+.about-grid{display:grid;grid-template-columns:5fr 6fr;gap:clamp(34px,7vw,110px);align-items:center}
+.about-img{position:relative;margin:0 22px 22px 0}
+.about-img::before{content:'';position:absolute;left:22px;top:22px;right:-22px;bottom:-22px;border:2px solid var(--brass)}
+.about-img img{position:relative;width:100%;aspect-ratio:1/1.08;object-fit:cover}
+.about-img .big{position:absolute;right:-14px;bottom:-34px;background:var(--espresso);color:var(--cream);padding:16px 24px;font-family:var(--serif);font-size:54px;line-height:1;z-index:2}
+.about-img .big small{display:block;font-family:var(--sans);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);margin-top:6px}
+.about h2{margin:14px 0 24px}
+.about p{margin-bottom:16px;max-width:56ch}
+.philo{border-left:3px solid var(--brass);padding:6px 0 6px 22px;margin:28px 0;font-family:var(--serif);font-size:clamp(20px,2vw,26px);line-height:1.3}
+.philo small{display:block;font-family:var(--sans);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--brass-d);font-weight:700;margin-bottom:8px}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid rgba(36,24,16,.25);margin-top:8px}
+.facts div{padding:18px 18px 18px 0;border-bottom:1px solid rgba(36,24,16,.25)}
+.facts div:nth-child(odd){border-right:1px solid rgba(36,24,16,.25)}
+.facts div:nth-child(even){padding-left:22px}
+.facts b{display:block;font-family:var(--serif);font-weight:400;font-size:20px;margin-bottom:2px}
+.facts span{font-size:15px;color:var(--muted)}
+
+/* people */
+.people{--bg:var(--spruce);background:var(--spruce);color:var(--cream);padding:clamp(64px,8vw,120px) 0}
+.people-grid{display:grid;grid-template-columns:6fr 5fr;gap:clamp(30px,6vw,96px);align-items:center}
+.people h2{margin:14px 0 22px}
+.people p.lead{color:#cfe0d9;max-width:44ch;margin-bottom:30px}
+.checks{list-style:none;display:grid;gap:0}
+.checks li{display:flex;align-items:center;gap:18px;padding:17px 0;border-bottom:1px solid rgba(245,239,228,.18);font-size:19px}
+.checks li:first-child{border-top:1px solid rgba(245,239,228,.18)}
+.checks i{width:30px;height:30px;border-radius:50%;background:var(--brass);display:grid;place-items:center;flex:none}
+.checks i svg{width:14px;stroke:var(--espresso);fill:none;stroke-width:3}
+.people-pic{position:relative;aspect-ratio:1/1.1;clip-path:polygon(0 12%,12% 0,100% 0,100% 88%,88% 100%,0 100%)}
+.people-pic img{width:100%;height:100%;object-fit:cover}
+
+/* results */
+.results{padding:clamp(70px,9vw,130px) 0}
+.results .head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:46px}
+.results h2{margin-top:12px}
+.mas{columns:3;column-gap:18px}
+.mas figure{break-inside:avoid;margin-bottom:18px;position:relative;overflow:hidden;background:var(--paper)}
+.mas img{width:100%;transition:transform .6s}
+.mas figure:hover img{transform:scale(1.04)}
+.mas figure.more{display:none}
+.mas.open figure.more{display:block;animation:fade .6s}
+@keyframes fade{from{opacity:0;transform:translateY(14px)}to{opacity:1}}
+.more-wrap{text-align:center;margin-top:34px}
+
+/* pricing */
+.pricing{--bg:var(--paper);background:var(--paper);padding:clamp(64px,8vw,120px) 0}
+.price-grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(30px,6vw,96px);align-items:center}
+.pricing h2{margin:14px 0 20px}
+.pricing .note{max-width:36ch;color:var(--muted);margin-bottom:28px}
+.board{background:var(--timber);color:var(--cream);border:2px solid var(--brass);outline:8px solid var(--timber);outline-offset:0;padding:clamp(28px,4vw,56px);position:relative;box-shadow:0 30px 60px rgba(36,24,16,.25)}
+.board::before,.board::after{content:'';position:absolute;top:18px;width:10px;height:10px;border-radius:50%;background:var(--brass)}
+.board::before{left:18px}.board::after{right:18px}
+.board .t{text-align:center;letter-spacing:.3em;text-transform:uppercase;font-size:13px;color:var(--brass);font-weight:700;margin-bottom:34px}
+.row{display:flex;align-items:baseline;gap:14px;padding:22px 0;border-top:1px solid rgba(201,154,74,.35)}
+.row:first-of-type{border-top:0}
+.row h3{font-size:clamp(22px,2.4vw,30px);white-space:nowrap}
+.row .dots{flex:1;border-bottom:2px dotted rgba(201,154,74,.6);transform:translateY(-6px);min-width:20px}
+.row .p{font-family:var(--serif);font-size:clamp(20px,2.2vw,30px);color:var(--brass);white-space:nowrap}
+.row .p small{font-family:var(--sans);font-size:13px;letter-spacing:.14em;margin-right:6px;color:#d8c7a8}
+
+/* contact */
+.contact{padding:clamp(70px,9vw,130px) 0 clamp(50px,6vw,80px);position:relative}
+.contact::before{content:'';position:absolute;left:-14%;bottom:-20%;width:70%;height:110%;background:url(images/contour.svg) center/contain no-repeat;opacity:.16;pointer-events:none}
+.contact-grid{display:grid;grid-template-columns:5fr 6fr;gap:clamp(30px,6vw,96px);position:relative}
+.contact h2{margin:14px 0 30px}
+.info{list-style:none;border-top:1px solid rgba(36,24,16,.25)}
+.info li{display:grid;grid-template-columns:110px 1fr;padding:18px 0;border-bottom:1px solid rgba(36,24,16,.25);gap:12px}
+.info small{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--brass-d);font-weight:700;padding-top:4px}
+.info a{text-decoration:none;font-family:var(--serif);font-size:22px;word-break:break-word}
+.info a:hover{color:var(--brass-d)}
+.info .open{display:inline-flex;align-items:center;gap:8px;font-size:13px;background:var(--spruce);color:var(--cream);padding:3px 12px;border-radius:30px;margin-left:8px;font-family:var(--sans);vertical-align:middle}
+.info .open::before{content:'';width:7px;height:7px;border-radius:50%;background:#6fdc8c}
+form.quote{background:var(--cream);border:1.5px solid var(--ink);padding:clamp(26px,4vw,48px);box-shadow:10px 10px 0 var(--brass)}
+form.quote h3{font-size:30px;margin-bottom:24px}
+.f{margin-bottom:20px}
+.f label{display:block;font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;margin-bottom:8px}
+.f input{width:100%;padding:14px 0;border:0;border-bottom:1.5px solid var(--ink);background:transparent;font:inherit;font-size:18px;outline:0;border-radius:0}
+.f input:focus{border-color:var(--brass-d)}
+form.quote .btn{width:100%;justify-content:center;background:var(--espresso);color:var(--cream)}
+form.quote .btn:hover{background:var(--spruce)}
+.ok{display:none;margin-top:16px;padding:14px 18px;background:var(--spruce);color:var(--cream)}
+.mail{position:relative;margin-top:clamp(50px,6vw,90px);background:var(--espresso);color:var(--cream);padding:clamp(28px,4vw,48px);display:flex;gap:30px;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.mail h3{font-size:clamp(24px,2.6vw,34px);margin-bottom:6px}
+.mail p{color:#d8c7a8;max-width:44ch}
+.mail form{display:flex;gap:0;flex:1;min-width:280px;max-width:480px}
+.mail input{flex:1;padding:16px 18px;border:0;font:inherit;background:var(--cream);outline:0;min-width:0}
+.mail .btn{border-radius:0}
+
+/* footer */
+footer{background:var(--espresso);color:#d8c7a8;padding:60px 0 28px;font-size:15px}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:44px;border-bottom:1px solid rgba(201,154,74,.3)}
+footer .brand span{color:var(--cream)}
+footer .tag{margin-top:16px;font-family:var(--serif);font-style:italic;font-size:20px;color:var(--brass)}
+footer h4{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--brass);margin-bottom:14px}
+footer ul{list-style:none;display:grid;gap:8px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--brass)}
+.legal{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-top:24px;font-size:14px}
+.legal a{color:var(--cream);border-bottom:1px solid var(--brass)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s}
+.rv.in{opacity:1;transform:none}
+
+@media(max-width:980px){
+  nav.links{position:fixed;inset:78px 0 auto 0;background:var(--cream);flex-direction:column;align-items:flex-start;padding:24px var(--gut) 32px;gap:20px;border-bottom:1px solid rgba(36,24,16,.2);transform:translateY(-130%);transition:transform .35s;z-index:-1}
+  nav.links.open{transform:none}
+  .burger{display:block}
+  .hero-top,.svc-grid,.about-grid,.people-grid,.price-grid,.contact-grid{grid-template-columns:1fr}
+  .svc-left{position:static}
+  .svc-frame{aspect-ratio:4/3}
+  .trip{grid-template-columns:1fr;gap:40px}
+  .trip article{border:0;margin:0;padding:0 0 40px;border-bottom:1px solid rgba(201,154,74,.35)}
+  .trip article:last-child{border:0}
+  .mas{columns:2}
+  .foot{grid-template-columns:1fr 1fr}
+  .foot>div:first-child{grid-column:1/-1}
+  .people-pic{order:-1}
+}
+@media(max-width:600px){
+  body{font-size:16px}
+  .util .r{gap:14px}
+  .sign{position:relative;left:auto;bottom:auto;margin:-40px 16px 0;flex-direction:column;align-items:flex-start;gap:14px;outline-width:3px}
+  .sign hr{display:none}
+  .places{margin-top:0;padding-top:70px}
+  .mas{columns:1}
+  .svc-list button{grid-template-columns:44px 1fr 30px}
+  .facts{grid-template-columns:1fr}
+  .facts div:nth-child(odd){border-right:0}
+  .facts div:nth-child(even){padding-left:0}
+  .row{flex-wrap:wrap}.row h3{white-space:normal}
+  .row .dots{display:none}
+  .info li{grid-template-columns:1fr;gap:2px}
+  .foot{grid-template-columns:1fr}
+  .stamp-wrap{top:-48px}
+  .mail form{flex-direction:column;gap:10px;max-width:none}
+}
+@media(prefers-reduced-motion:reduce){.marq,.stamp-wrap svg{animation:none}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<div class="util">
+  <div class="wrap">
+    <div><b>Open today</b> &nbsp;9:00 am &ndash; 5:00 pm</div>
+    <div class="r">
+      <a href="tel:4036883338">403-688-3338</a>
+      <a href="mailto:canmorecorpcleaning@yahoo.com">canmorecorpcleaning@yahoo.com</a>
+    </div>
+  </div>
+</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="brand" aria-label="Canmore Corporate Cleaning home">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="23" fill="#241810"/><path d="M6 35 L17 17 L22 25 L29 12 L42 35 Z" fill="#c99a4a"/><path d="M29 12 L33.5 20 L30.5 19 L29 22 L27 19 L25.5 20 Z" fill="#f5efe4"/><path d="M8 38 Q24 33 40 38" stroke="#8ec3cc" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+      <div><span>Canmore Corporate<br>Cleaning</span></div>
+    </a>
+    <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+    <nav class="links" id="menu">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#people">Our People</a>
+      <a href="#results">Results</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact" class="btn">Get a Free Quote</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-top">
+      <div>
+        <div class="eyebrow">Commercial &middot; Industrial &middot; Residential &middot; Airbnb &middot; Janitorial</div>
+        <h1>Your cleaning needs, <em>our cleaning hands.</em></h1>
+      </div>
+      <div class="hero-side">
+        <p>We provide top-notch cleaning services that exceed expectations.</p>
+        <div class="cta">
+          <a href="#contact" class="btn btn-brass">Get a Free Quote
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 8h12M9 3l5 5-5 5"/></svg></a>
+          <a href="tel:4036883338" class="btn btn-line">403-688-3338</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="hero-img">
+      <div class="stamp-wrap" aria-hidden="true">
+        <svg viewBox="0 0 200 200"><defs><path id="cp" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+          <circle cx="100" cy="100" r="98" fill="#c99a4a"/>
+          <text font-family="DM Sans" font-weight="700" font-size="14" letter-spacing="2.4" fill="#241810"><textPath href="#cp" textLength="480" lengthAdjust="spacing">WEEKLY &#8226; MONTHLY &#8226; YEARLY &#8226; JANITORIAL &#8226;</textPath></text></svg>
+        <div class="core"><div>19<small>years</small></div></div>
+      </div>
+      <div class="pic"><img src="images/hero.jpg" alt="Polished timber floors and dining hall cleaned by Canmore Corporate Cleaning" width="1316" height="640"></div>
+      <div class="sign">
+        <div><small>Open today</small><strong>9:00 am &ndash; 5:00 pm</strong></div>
+        <hr>
+        <div><small>Call or text</small><strong>403-688-3338</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLACES -->
+<section class="places dark ridge" style="--bg:var(--espresso)" aria-label="Places we clean">
+  <div class="wrap lab"><span class="eyebrow">Places we clean</span></div>
+  <div class="marq-clip"><div class="marq">
+    <span>Lake Louise</span><span>Kananaskis campgrounds</span><span>Airbnbs</span><span>Grocery stores</span><span>Medical offices</span><span>Financial institutions</span><span>Gyms</span><span>A ski resort</span>
+    <span>Lake Louise</span><span>Kananaskis campgrounds</span><span>Airbnbs</span><span>Grocery stores</span><span>Medical offices</span><span>Financial institutions</span><span>Gyms</span><span>A ski resort</span>
+  </div></div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="wrap svc-grid">
+    <div class="svc-left rv">
+      <div class="eyebrow">What we clean</div>
+      <h2>One crew for every kind of space.</h2>
+      <div class="svc-frame">
+        <img class="on" src="images/commercial.jpg" alt="Cleaners at work in a commercial office" data-i="0">
+        <img src="images/industrial.jpg" alt="Large building exterior windows being cleaned" data-i="1" loading="lazy">
+        <img src="images/residential.jpg" alt="Freshly cleaned bathroom" data-i="2" loading="lazy">
+        <img src="images/airbnb.jpg" alt="Cleaner wiping down a lodge kitchen counter" data-i="3" loading="lazy">
+        <img src="images/janitorial.jpg" alt="Janitorial vacuuming of a long carpeted hallway" data-i="4" loading="lazy">
+      </div>
+    </div>
+    <ul class="svc-list rv">
+      <li class="on"><button type="button" data-i="0"><span class="n">01</span><h3>Commercial cleaning</h3><span class="ar"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 6h10M7 2l4 4-4 4"/></svg></span><p>Professional office cleaning for businesses of all sizes, with current equipment and techniques. Grocery stores, medical offices, financial institutions and gyms too.</p></button></li>
+      <li><button type="button" data-i="1"><span class="n">02</span><h3>Industrial cleaning</h3><span class="ar"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 6h10M7 2l4 4-4 4"/></svg></span><p>A full range of cleaning services for industrial sites, with the same care we give every job.</p></button></li>
+      <li><button type="button" data-i="2"><span class="n">03</span><h3>Residential cleaning</h3><span class="ar"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 6h10M7 2l4 4-4 4"/></svg></span><p>Cleaning for homes, delivered by Exshaw and Canmore residents you can trust.</p></button></li>
+      <li><button type="button" data-i="3"><span class="n">04</span><h3>Airbnb cleaning</h3><span class="ar"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 6h10M7 2l4 4-4 4"/></svg></span><p>Cleaning for Airbnbs, so every guest walks into a spotless space.</p></button></li>
+      <li><button type="button" data-i="4"><span class="n">05</span><h3>Janitorial maintenance</h3><span class="ar"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 6h10M7 2l4 4-4 4"/></svg></span><p>Weekly, monthly and yearly janitorial maintenance, kept up for 19 years.</p></button></li>
+    </ul>
+  </div>
+</section>
+
+<!-- PROMISES -->
+<section class="promises dark ridge">
+  <div class="wrap">
+    <div class="head rv">
+      <div><div class="eyebrow">How we clean</div><h2 style="margin-top:14px">Built around your building.</h2></div>
+      <p>Cleaning plans that fit your schedule, done with products that are kind to your space.</p>
+    </div>
+    <div class="trip rv">
+      <article>
+        <svg class="ic" viewBox="0 0 64 64"><rect x="10" y="14" width="44" height="36" rx="2"/><path d="M10 24h44M20 33h12M20 41h20"/><path d="M44 31l3 3 6-7"/></svg>
+        <h3>Professional Office Cleaning Services</h3>
+        <p>Office cleaning for businesses of all sizes, using current equipment and techniques.</p>
+      </article>
+      <article>
+        <svg class="ic" viewBox="0 0 64 64"><circle cx="32" cy="32" r="22"/><path d="M32 18v14l10 6"/><path d="M8 12l6 4M56 12l-6 4"/></svg>
+        <h3>Flexible Cleaning Plans</h3>
+        <p>Plans tailored to the way you work.</p>
+        <div class="chips"><b>Daily</b><b>Weekly</b><b>Monthly</b></div>
+      </article>
+      <article>
+        <svg class="ic" viewBox="0 0 64 64"><path d="M14 50C14 26 28 14 52 12c0 24-12 38-34 38"/><path d="M14 50C22 40 32 30 44 22"/></svg>
+        <h3>Eco-Friendly Cleaning Solutions</h3>
+        <p>Non-toxic, biodegradable products, used on every job.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-img rv">
+      <img src="images/about.jpg" alt="Cleaner mopping a timber lodge hall" loading="lazy">
+      <div class="big">19<small>years in business</small></div>
+    </div>
+    <div class="rv">
+      <div class="eyebrow">About Canmore Corporate Cleaning</div>
+      <h2>A full range of cleaning services, 19 years running.</h2>
+      <p>We work across industrial, commercial and residential sites, from Lake Louise and Kananaskis campgrounds to Airbnbs, grocery stores, medical offices, financial institutions, gyms and a ski resort.</p>
+      <div class="philo"><small>Our cleaning philosophy</small>Weekly, monthly and yearly janitorial maintenance, done right for 19 years.</div>
+      <div class="facts">
+        <div><b>We match the lowest bidder</b><span>Price matching on your quote.</span></div>
+        <div><b>Fully insured</b><span>General liability and property damage insurance.</span></div>
+        <div><b>Local crew</b><span>Our staff are Exshaw and Canmore residents.</span></div>
+        <div><b>Every kind of site</b><span>Industrial, commercial and residential.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PEOPLE -->
+<section class="people dark ridge" id="people">
+  <div class="wrap people-grid">
+    <div class="rv">
+      <div class="eyebrow">Our people</div>
+      <h2>People you can let through the door.</h2>
+      <p class="lead">Every member of our team is screened and trained before they clean for you.</p>
+      <ul class="checks">
+        <li><i><svg viewBox="0 0 14 14"><path d="M2 7.5l3.2 3L12 3.5"/></svg></i>Screened and trained</li>
+        <li><i><svg viewBox="0 0 14 14"><path d="M2 7.5l3.2 3L12 3.5"/></svg></i>Criminal record checks passed</li>
+        <li><i><svg viewBox="0 0 14 14"><path d="M2 7.5l3.2 3L12 3.5"/></svg></i>WHMIS certified</li>
+        <li><i><svg viewBox="0 0 14 14"><path d="M2 7.5l3.2 3L12 3.5"/></svg></i>First Aid certified</li>
+      </ul>
+    </div>
+    <div class="people-pic rv"><img src="images/people.jpg" alt="Canmore Corporate Cleaning team member cleaning a lodge lounge" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="results" id="results">
+  <div class="wrap">
+    <div class="head rv">
+      <div><div class="eyebrow">Our work</div><h2>Before and after.</h2></div>
+      <a href="#contact" class="btn btn-line">Get a Free Quote</a>
+    </div>
+    <div class="mas" id="mas">
+      <figure><img src="images/g3.jpg" alt="Timber floor before and after cleaning" loading="lazy"></figure>
+      <figure><img src="images/g1.jpg" alt="Toilet bowl before and after cleaning" loading="lazy"></figure>
+      <figure><img src="images/g4.jpg" alt="Tile hallway before and after cleaning" loading="lazy"></figure>
+      <figure><img src="images/g2.jpg" alt="Steel sink before and after cleaning" loading="lazy"></figure>
+      <figure><img src="images/g5.jpg" alt="Dining hall floor before and after cleaning" loading="lazy"></figure>
+      <figure><img src="images/g6.jpg" alt="Stone and glass partition before and after cleaning" loading="lazy"></figure>
+      <figure class="more"><img src="images/g7.jpg" alt="Basin and tap before and after cleaning" loading="lazy"></figure>
+      <figure class="more"><img src="images/g8.jpg" alt="Clean washroom" loading="lazy"></figure>
+      <figure class="more"><img src="images/g9.jpg" alt="Lodge dining hall with polished floors" loading="lazy"></figure>
+    </div>
+    <div class="more-wrap"><button class="btn btn-line" id="showMore" type="button">Show More</button></div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing dark-ish ridge" id="pricing">
+  <div class="wrap price-grid">
+    <div class="rv">
+      <div class="eyebrow">Our service price menu</div>
+      <h2>Straightforward pricing.</h2>
+      <p class="note">We will match the lowest bidder. Tell us about your space and we will quote it.</p>
+      <a href="#contact" class="btn btn-brass">Get a Free Quote</a>
+    </div>
+    <div class="board rv">
+      <div class="t">Price menu</div>
+      <div class="row"><h3>General cleaning</h3><span class="dots"></span><span class="p"><small>CAD</small>$25 &ndash; $125</span></div>
+      <div class="row"><h3>Specialized cleaning</h3><span class="dots"></span><span class="p"><small>CAD</small>$125 &ndash; $145</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="rv">
+        <div class="eyebrow">Contact us</div>
+        <h2>Tell us what needs cleaning.</h2>
+        <ul class="info">
+          <li><small>Call</small><a href="tel:4036883338">403-688-3338</a></li>
+          <li><small>Email</small><a href="mailto:canmorecorpcleaning@yahoo.com">canmorecorpcleaning@yahoo.com</a></li>
+          <li><small>Visit</small><span>Box 740-743 Railway Ave.<br>Canmore, AB T1W 1P2</span></li>
+          <li><small>Hours</small><span>Open today, 9:00 am &ndash; 5:00 pm <em class="open">Welcome during business hours</em></span></li>
+        </ul>
+      </div>
+      <form class="quote rv" id="quote" novalidate>
+        <h3>Get a Free Quote</h3>
+        <div class="f"><label for="n">Name</label><input id="n" name="name" type="text" autocomplete="name"></div>
+        <div class="f"><label for="e">Email *</label><input id="e" name="email" type="email" required autocomplete="email"></div>
+        <button class="btn" type="submit">Send</button>
+        <div class="ok" id="ok" role="status">Thank you. We will be in touch soon.</div>
+      </form>
+    </div>
+    <div class="mail rv">
+      <div><h3>Join Our Mailing List</h3><p>Get 10% off your first purchase when you sign up for our newsletter!</p></div>
+      <form id="news" novalidate>
+        <input type="email" placeholder="Email" aria-label="Email" required>
+        <button class="btn btn-brass" type="submit">Sign up</button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a href="#top" class="brand"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="23" fill="#c99a4a"/><path d="M6 35 L17 17 L22 25 L29 12 L42 35 Z" fill="#241810"/><path d="M29 12 L33.5 20 L30.5 19 L29 22 L27 19 L25.5 20 Z" fill="#f5efe4"/></svg><div><span>Canmore Corporate<br>Cleaning</span></div></a>
+        <p class="tag">Your cleaning needs, our cleaning hands.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul><li><a href="#services">Services</a></li><li><a href="#about">About</a></li><li><a href="#people">Our People</a></li><li><a href="#results">Results</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#contact">Contact</a></li></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul><li><a href="tel:4036883338">403-688-3338</a></li><li><a href="mailto:canmorecorpcleaning@yahoo.com">canmorecorpcleaning@yahoo.com</a></li><li>Box 740-743 Railway Ave.<br>Canmore, AB T1W 1P2</li><li>Open today 9:00 am &ndash; 5:00 pm</li></ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>&copy; 2026 Canmore Corporate Cleaning. All Rights Reserved.</span>
+      <span>Design by <a href="https://cleanningdigital.com/" target="_blank" rel="noopener">Cleaning Digital</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var b=document.querySelector('.burger'),m=document.getElementById('menu');
+  b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+  m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.remove('open');b.setAttribute('aria-expanded',false)}});
+  // services
+  var btns=document.querySelectorAll('.svc-list button'),imgs=document.querySelectorAll('.svc-frame img');
+  function setS(i){
+    document.querySelectorAll('.svc-list li').forEach(function(li,k){li.classList.toggle('on',k==i)});
+    imgs.forEach(function(im,k){im.classList.toggle('on',k==i)});
+  }
+  btns.forEach(function(x){var i=+x.dataset.i;x.addEventListener('click',function(){setS(i)});x.addEventListener('mouseenter',function(){if(matchMedia('(hover:hover)').matches)setS(i)})});
+  // more
+  var sm=document.getElementById('showMore'),mas=document.getElementById('mas');
+  sm.addEventListener('click',function(){var o=mas.classList.toggle('open');sm.textContent=o?'Show Less':'Show More'});
+  // forms
+  document.getElementById('quote').addEventListener('submit',function(e){e.preventDefault();var em=document.getElementById('e');if(!em.value||!em.checkValidity()){em.focus();em.style.borderColor='#b3261e';return}em.style.borderColor='';document.getElementById('ok').style.display='block';this.reset()});
+  document.getElementById('news').addEventListener('submit',function(e){e.preventDefault();var i=this.querySelector('input');if(!i.checkValidity()||!i.value){i.focus();return}this.innerHTML='<p style="padding:16px 0">Thank you for signing up.</p>'});
+  // reveal
+  var els=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});els.forEach(function(x){io.observe(x)})}else{els.forEach(function(x){x.classList.add('in')})}
+})();
+</script>
+</body>
+</html>
